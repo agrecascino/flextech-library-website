@@ -61,7 +61,9 @@ if(@($_GET['action']) == 'submit'){
         }
     
         mysqli_stmt_execute($stmt);
+>>>>>>> origin/master
     }
+mysql_close;
 }
 ?>
 
@@ -92,7 +94,7 @@ if(@($_GET['action']) == 'submit'){
     <p>Location (Either PDF link, or room that it's in.):</p>
     <input type="text" name="location" id="location"><br>
     <p>Link to image cover: (Should be a .jpg, .png, or .gif)</p>
-    <input type="text" name="coverlink" id="coverlink"><br>
+    <input type="text" name="cover" id="cover"><br>
     <br>
     <br>
     <input type="submit" value="Submit" autofocus>
